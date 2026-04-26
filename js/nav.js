@@ -18,12 +18,9 @@ const NAV_HTML = `
       <li><a href="projects.html" class="nav-link" data-page="projects">Projects</a></li>
       <li><a href="learn.html"   class="nav-link nav-cta">Get Started →</a></li>
     </ul>
-    <div style="display:flex;align-items:center;gap:.5rem;">
-      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">☀️</button>
-      <button class="hamburger" id="hamburger" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>`;
 
@@ -94,20 +91,9 @@ document.addEventListener('DOMContentLoaded', () => {
     a.addEventListener('click', () => navLinks.classList.remove('open'));
   });
 
-  // Theme toggle
-  const themeToggle = document.getElementById('theme-toggle');
-  const isDark = () => document.documentElement.getAttribute('data-theme') === 'dark';
-
-  const updateIcon = () => {
-    if (themeToggle) themeToggle.textContent = isDark() ? '☀️' : '🌙';
-  };
-
-  updateIcon();
-
-  themeToggle?.addEventListener('click', () => {
-    const next = isDark() ? 'light' : 'dark';
-    document.documentElement.setAttribute('data-theme', next);
-    localStorage.setItem('theme', next);
-    updateIcon();
+  // Follow system color scheme automatically
+  const mq = window.matchMedia('(prefers-color-scheme: dark)');
+  mq.addEventListener('change', e => {
+    document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
   });
 });
