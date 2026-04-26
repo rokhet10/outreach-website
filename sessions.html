@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sessions — CodeReach</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/theme-init.js"></script>
+</head>
+<body data-page="sessions">
+  <main>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-tag">Free Library</span>
+        <h1>Recorded <span class="gradient-text">Sessions</span></h1>
+        <p>Every workshop and Zoom session we've hosted — organized by topic and level. Watch anytime, for free.</p>
+      </div>
+    </section>
+
+    <!-- Filter + Grid -->
+    <section class="section">
+      <div class="container">
+        <div class="filter-bar" id="filter-bar">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="python">Python</button>
+          <button class="filter-btn" data-filter="dl">USACO</button>
+          <button class="filter-btn" data-filter="ml">Machine Learning</button>
+          <button class="filter-btn" data-filter="nlp">NLP / LLMs</button>
+          <button class="filter-btn" data-filter="beginner">Beginner</button>
+          <button class="filter-btn" data-filter="intermediate">Intermediate</button>
+        </div>
+
+        <div class="grid-auto" id="sessions-grid">
+
+          <div class="card session-card" data-tags="python beginner">
+            <div class="session-thumb">
+              🐍
+              <a href="#" class="play-btn" aria-label="Play">▶</a>
+            </div>
+            <div class="session-info">
+              <div class="session-meta">
+                <span class="tag tag-green">Python</span>
+                <span class="tag tag-cyan">Beginner</span>
+              </div>
+              <h3>Python for AI: Zero to Hero</h3>
+              <p>Everything you need — variables, loops, functions, and libraries like NumPy.</p>
+            </div>
+            <div class="session-footer">
+              <span class="session-instructor">CodeReach Team · 58 min</span>
+              <a href="#" class="btn btn-sm btn-ghost">Watch →</a>
+            </div>
+          </div>
+
+          <!-- <div class="card session-card" data-tags="ml beginner">
+            <div class="session-thumb">
+              🤖
+              <a href="#" class="play-btn" aria-label="Play">▶</a>
+            </div>
+            <div class="session-info">
+              <div class="session-meta">
+                <span class="tag tag-purple">ML</span>
+                <span class="tag tag-cyan">Beginner</span>
+              </div>
+              <h3>Intro to Neural Networks</h3>
+              <p>Build a feedforward neural net from scratch. Understand backprop step-by-step.</p>
+            </div>
+            <div class="session-footer">
+              <span class="session-instructor">Rohan Khetan · 72 min</span>
+              <a href="#" class="btn btn-sm btn-ghost">Watch →</a>
+            </div>
+          </div> -->
+
+          <!-- <div class="card session-card" data-tags="ml intermediate">
+            <div class="session-thumb">
+              📊
+              <a href="#" class="play-btn" aria-label="Play">▶</a>
+            </div>
+            <div class="session-info">
+              <div class="session-meta">
+                <span class="tag tag-purple">ML</span>
+                <span class="tag tag-purple">Intermediate</span>
+              </div>
+              <h3>Supervised Learning Deep Dive</h3>
+              <p>Linear/logistic regression, decision trees, and model evaluation with scikit-learn.</p>
+            </div>
+            <div class="session-footer">
+              <span class="session-instructor">CodeReach Team · 85 min</span>
+              <a href="#" class="btn btn-sm btn-ghost">Watch →</a>
+            </div>
+          </div> -->
+
+          <!-- <div class="card session-card" data-tags="nlp intermediate">
+            <div class="session-thumb">
+              💬
+              <a href="#" class="play-btn" aria-label="Play">▶</a>
+            </div>
+            <div class="session-info">
+              <div class="session-meta">
+                <span class="tag tag-pink">NLP</span>
+                <span class="tag tag-purple">Intermediate</span>
+              </div>
+              <h3>How LLMs Actually Work</h3>
+              <p>Tokens, attention, transformers — the real architecture behind GPT and friends.</p>
+            </div>
+            <div class="session-footer">
+              <span class="session-instructor">Rohan Khetan · 90 min</span>
+              <a href="#" class="btn btn-sm btn-ghost">Watch →</a>
+            </div>
+          </div> -->
+
+          <!-- <div class="card session-card" data-tags="dl intermediate">
+            <div class="session-thumb">
+              🧬
+              <a href="#" class="play-btn" aria-label="Play">▶</a>
+            </div>
+            <div class="session-info">
+              <div class="session-meta">
+                <span class="tag tag-cyan">USACO</span>
+                <span class="tag tag-purple">Intermediate</span>
+              </div>
+              <h3>CNNs for Image Classification</h3>
+              <p>Build a convolutional neural network in PyTorch and classify images with 90%+ accuracy.</p>
+            </div>
+            <div class="session-footer">
+              <span class="session-instructor">CodeReach Team · 78 min</span>
+              <a href="#" class="btn btn-sm btn-ghost">Watch →</a>
+            </div>
+          </div> -->
+
+          <!-- <div class="card session-card" data-tags="nlp intermediate">
+            <div class="session-thumb">
+              🔧
+              <a href="#" class="play-btn" aria-label="Play">▶</a>
+            </div>
+            <div class="session-info">
+              <div class="session-meta">
+                <span class="tag tag-pink">LLMs</span>
+                <span class="tag tag-purple">Intermediate</span>
+              </div>
+              <h3>Prompt Engineering Deep Dive</h3>
+              <p>Chain-of-thought, few-shot prompting, and structured output techniques.</p>
+            </div>
+            <div class="session-footer">
+              <span class="session-instructor">CodeReach Team · 65 min</span>
+              <a href="#" class="btn btn-sm btn-ghost">Watch →</a>
+            </div>
+          </div> -->
+
+          <!-- <div class="card session-card" data-tags="python beginner">
+            <div class="session-thumb">
+              📐
+              <a href="#" class="play-btn" aria-label="Play">▶</a>
+            </div>
+            <div class="session-info">
+              <div class="session-meta">
+                <span class="tag tag-green">Python</span>
+                <span class="tag tag-cyan">Beginner</span>
+              </div>
+              <h3>Math for ML: Linear Algebra</h3>
+              <p>Vectors, matrices, dot products — the math you actually need for machine learning.</p>
+            </div>
+            <div class="session-footer">
+              <span class="session-instructor">CodeReach Team · 55 min</span>
+              <a href="#" class="btn btn-sm btn-ghost">Watch →</a>
+            </div>
+          </div> -->
+
+          <!-- <div class="card session-card" data-tags="dl intermediate">
+            <div class="session-thumb">
+              🎨
+              <a href="#" class="play-btn" aria-label="Play">▶</a>
+            </div>
+            <div class="session-info">
+              <div class="session-meta">
+                <span class="tag tag-cyan">USACO</span>
+                <span class="tag tag-pink">Advanced</span>
+              </div>
+              <h3>Intro to Diffusion Models</h3>
+              <p>How Stable Diffusion works — forward/reverse diffusion, U-Net, and CLIP embeddings.</p>
+            </div>
+            <div class="session-footer">
+              <span class="session-instructor">Rohan Khetan · 95 min</span>
+              <a href="#" class="btn btn-sm btn-ghost">Watch →</a>
+            </div>
+          </div> -->
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-sm">
+      <div class="container">
+        <div class="cta-band aos">
+          <h2>Want to be notified of <span class="gradient-text">new sessions?</span></h2>
+          <p>Sign up and we'll email you when new recordings are added and upcoming live sessions are announced.</p>
+          <div class="cta-btns">
+            <a href="learn.html#signup" class="btn btn-primary">Sign Up for Updates →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <script src="js/nav.js"></script>
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.aos').forEach(el => observer.observe(el));
+
+    // Filter logic
+    document.getElementById('filter-bar').addEventListener('click', e => {
+      const btn = e.target.closest('.filter-btn');
+      if (!btn) return;
+
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.dataset.filter;
+      document.querySelectorAll('#sessions-grid .card').forEach(card => {
+        const tags = card.dataset.tags || '';
+        card.style.display = (filter === 'all' || tags.includes(filter)) ? '' : 'none';
+      });
+    });
+  </script>
+</body>
+</html>

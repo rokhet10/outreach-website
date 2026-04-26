@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teach — CodeReach</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/theme-init.js"></script>
+</head>
+<body data-page="teach">
+  <main>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-tag">Volunteer</span>
+        <h1>Share your knowledge.<br><span class="gradient-text">Inspire the next generation.</span></h1>
+        <p>Become an instructor, create a lesson, or mentor students. No formal teaching experience required — just passion and expertise.</p>
+      </div>
+    </section>
+
+    <!-- Why teach -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header aos">
+          <span class="section-tag">Why Volunteer</span>
+          <h2>Why instructors <span class="gradient-text">love it here</span></h2>
+        </div>
+        <div class="grid-3">
+          <div class="card aos">
+            <div class="feature-icon">🧠</div>
+            <h3>Deepen Your Own Skills</h3>
+            <p style="color:var(--text-2);font-size:.875rem;margin-top:.5rem;">Teaching forces you to truly understand a topic. Instructors consistently report that their own knowledge deepened by explaining concepts to others.</p>
+          </div>
+          <div class="card aos">
+            <div class="feature-icon">🌟</div>
+            <h3>Build Your Portfolio</h3>
+            <p style="color:var(--text-2);font-size:.875rem;margin-top:.5rem;">Teaching experience, recorded sessions, and curriculum you've built are powerful additions to any CS or research portfolio.</p>
+          </div>
+          <div class="card aos">
+            <div class="feature-icon">🤝</div>
+            <h3>Grow Your Network</h3>
+            <p style="color:var(--text-2);font-size:.875rem;margin-top:.5rem;">Connect with fellow instructors, motivated students, and an engaged community passionate about AI.</p>
+          </div>
+          <!-- <div class="card aos">
+            <div class="feature-icon">🕒</div>
+            <h3>Flexible Commitment</h3>
+            <p style="color:var(--text-2);font-size:.875rem;margin-top:.5rem;">Teach one session or build an entire curriculum — it's up to you. We work around your schedule.</p>
+          </div>
+          <div class="card aos">
+            <div class="feature-icon">🎙️</div>
+            <h3>Full Support</h3>
+            <p style="color:var(--text-2);font-size:.875rem;margin-top:.5rem;">We handle logistics, promotion, and tech setup. You focus on teaching. Templates, slide decks, and support are all available.</p>
+          </div>
+          <div class="card aos">
+            <div class="feature-icon">💥</div>
+            <h3>Real Impact</h3>
+            <p style="color:var(--text-2);font-size:.875rem;margin-top:.5rem;">A single session can spark a student's entire career. Your knowledge has a reach far beyond the room.</p>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Roles -->
+    <section class="section" style="background:var(--bg-1);">
+      <div class="container">
+        <div class="section-header aos">
+          <span class="section-tag">Roles</span>
+          <h2>How you can <span class="gradient-text">contribute</span></h2>
+          <p>Find the role that fits your availability and strengths.</p>
+        </div>
+        <div class="grid-3">
+          <div class="card aos" style="border-color:var(--border-bright);">
+            <div style="font-size:2rem;margin-bottom:.75rem;">🎤</div>
+            <h3>Workshop Instructor</h3>
+            <p style="color:var(--text-2);font-size:.875rem;margin-top:.5rem;margin-bottom:.875rem;">Lead a live workshop or Zoom session on a topic you know well. Can be a one-time or recurring commitment.</p>
+            <span class="tag tag-purple">1–2 hrs / session</span>
+          </div>
+          <div class="card aos">
+            <div style="font-size:2rem;margin-bottom:.75rem;">📝</div>
+            <h3>Curriculum Designer</h3>
+            <p style="color:var(--text-2);font-size:.875rem;margin-top:.5rem;margin-bottom:.875rem;">Create lesson plans, slide decks, exercises, and projects that other instructors can use.</p>
+            <span class="tag tag-cyan">Async · flexible hours</span>
+          </div>
+          <div class="card aos">
+            <div style="font-size:2rem;margin-bottom:.75rem;">🧭</div>
+            <h3>Student Mentor</h3>
+            <p style="color:var(--text-2);font-size:.875rem;margin-top:.5rem;margin-bottom:.875rem;">Provide 1:1 or small-group mentorship to students working on projects or navigating their learning path.</p>
+            <span class="tag tag-green">1 hr / week</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Volunteer form -->
+    <section class="section" id="apply">
+      <div class="container" style="max-width:680px;">
+        <div class="section-header aos">
+          <span class="section-tag">Apply</span>
+          <h2>Ready to <span class="gradient-text">get started?</span></h2>
+          <p>Fill out the form below and we'll follow up within a few days to discuss how you can help.</p>
+        </div>
+        <div class="form-card aos">
+          <form id="teach-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="t-first">First Name *</label>
+                <input type="text" id="t-first" name="first_name" placeholder="Jane" required />
+              </div>
+              <div class="form-group">
+                <label for="t-last">Last Name *</label>
+                <input type="text" id="t-last" name="last_name" placeholder="Doe" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="t-email">Email Address *</label>
+              <input type="email" id="t-email" name="email" placeholder="jane@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="t-affiliation">Current School / Employer</label>
+              <input type="text" id="t-affiliation" name="affiliation" placeholder="e.g. Stanford University" />
+            </div>
+            <div class="form-group">
+              <label for="t-role">Role You're Interested In *</label>
+              <select id="t-role" name="role" required>
+                <option value="">Select...</option>
+                <option>Workshop Instructor</option>
+                <option>Curriculum Designer</option>
+                <option>Student Mentor</option>
+                <option>Multiple / Not sure yet</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="t-topic">Topic(s) You'd Like to Teach or Contribute</label>
+              <input type="text" id="t-topic" name="topics" placeholder="e.g. Reinforcement Learning, Python, Computer Vision" />
+            </div>
+            <div class="form-group">
+              <label for="t-availability">Availability</label>
+              <select id="t-availability" name="availability">
+                <option value="">Select...</option>
+                <option>A few hours per month</option>
+                <option>Once a month</option>
+                <option>Bi-weekly</option>
+                <option>Weekly</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="t-bio">Tell us a bit about yourself and your background *</label>
+              <textarea id="t-bio" name="bio" placeholder="Your CS/AI background, what you'd like to teach, and anything else that's relevant..." required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="t-link">LinkedIn / GitHub / Personal Site (optional)</label>
+              <input type="url" id="t-link" name="link" placeholder="https://" />
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">Submit Application →</button>
+            <div class="success-msg" id="teach-success">
+              🙌 Thank you! We'll be in touch within a few days to chat about next steps.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <script src="js/nav.js"></script>
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.aos').forEach(el => observer.observe(el));
+
+    const TEACH_ENDPOINT = 'https://formspree.io/f/mvzddyqy';
+
+    document.getElementById('teach-form').addEventListener('submit', async e => {
+      e.preventDefault();
+      const btn = e.target.querySelector('[type=submit]');
+      btn.textContent = 'Sending…';
+      btn.disabled = true;
+      try {
+        const res = await fetch(TEACH_ENDPOINT, {
+          method: 'POST',
+          body: new FormData(e.target),
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          document.getElementById('teach-success').style.display = 'block';
+          e.target.reset();
+          btn.textContent = 'Submitted ✓';
+        } else {
+          btn.textContent = 'Error — please try again';
+          btn.disabled = false;
+        }
+      } catch {
+        btn.textContent = 'Error — please try again';
+        btn.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>

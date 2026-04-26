@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — CodeReach</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/theme-init.js"></script>
+</head>
+<body data-page="projects">
+  <main>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-tag">Student Work</span>
+        <h1>Projects built by <span class="gradient-text">our community</span></h1>
+        <p>Real AI projects created by CodeReach students and teams. From classifiers to chatbots to generative art — this is what learning looks like in practice.</p>
+      </div>
+    </section>
+
+    <!-- Filter + Grid -->
+    <section class="section">
+      <div class="container">
+        <div class="filter-bar" id="project-filter">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="ml">Machine Learning</button>
+          <button class="filter-btn" data-filter="nlp">NLP / LLMs</button>
+          <button class="filter-btn" data-filter="cv">Computer Vision</button>
+          <button class="filter-btn" data-filter="app">Applications</button>
+        </div>
+
+        <div class="grid-auto" id="projects-grid">
+
+          <div class="card" data-tags="nlp app">
+            <div class="project-img">💬</div>
+            <div class="project-meta">
+              <span class="tag tag-pink">NLP</span>
+              <span class="tag tag-cyan">App</span>
+            </div>
+            <h3>StudyBot</h3>
+            <p class="project-desc">An AI-powered study assistant that generates practice questions, summarizes notes, and explains concepts on demand using a fine-tuned LLM.</p>
+            <div class="project-footer">
+              <span class="project-team">Team of 3 · Spring 2026</span>
+              <a href="#" class="btn btn-sm btn-ghost">View →</a>
+            </div>
+          </div>
+
+          <!-- <div class="card" data-tags="cv ml">
+            <div class="project-img">👁️</div>
+            <div class="project-meta">
+              <span class="tag tag-cyan">Computer Vision</span>
+              <span class="tag tag-purple">ML</span>
+            </div>
+            <h3>Sign Language Translator</h3>
+            <p class="project-desc">Real-time ASL gesture recognition using a CNN trained on MediaPipe landmark data. Converts hand gestures to text at 30fps.</p>
+            <div class="project-footer">
+              <span class="project-team">Team of 2 · Winter 2026</span>
+              <a href="#" class="btn btn-sm btn-ghost">View →</a>
+            </div>
+          </div> -->
+
+          <!-- <div class="card" data-tags="ml app">
+            <div class="project-img">🎵</div>
+            <div class="project-meta">
+              <span class="tag tag-purple">ML</span>
+              <span class="tag tag-green">App</span>
+            </div>
+            <h3>Mood-Based Music Recommender</h3>
+            <p class="project-desc">Classifies user mood from a short text input and recommends Spotify playlists using a sentiment model and the Spotify API.</p>
+            <div class="project-footer">
+              <span class="project-team">Solo · Fall 2025</span>
+              <a href="#" class="btn btn-sm btn-ghost">View →</a>
+            </div>
+          </div> -->
+
+          <!-- <div class="card" data-tags="nlp">
+            <div class="project-img">📰</div>
+            <div class="project-meta">
+              <span class="tag tag-pink">NLP</span>
+            </div>
+            <h3>Fake News Detector</h3>
+            <p class="project-desc">A BERT-based classifier trained on labeled news articles to identify misinformation. Deployed as a browser extension.</p>
+            <div class="project-footer">
+              <span class="project-team">Team of 4 · Fall 2025</span>
+              <a href="#" class="btn btn-sm btn-ghost">View →</a>
+            </div>
+          </div> -->
+
+          <!-- <div class="card" data-tags="cv app">
+            <div class="project-img">🌿</div>
+            <div class="project-meta">
+              <span class="tag tag-cyan">Computer Vision</span>
+              <span class="tag tag-green">App</span>
+            </div>
+            <h3>Plant Disease Classifier</h3>
+            <p class="project-desc">Upload a photo of a leaf and get an instant diagnosis. Built with a ResNet-50 fine-tuned on the PlantVillage dataset.</p>
+            <div class="project-footer">
+              <span class="project-team">Team of 2 · Spring 2025</span>
+              <a href="#" class="btn btn-sm btn-ghost">View →</a>
+            </div>
+          </div> -->
+
+          <div class="card" data-tags="ml">
+            <div class="project-img">📈</div>
+            <div class="project-meta">
+              <span class="tag tag-purple">ML</span>
+            </div>
+            <h3>Stock Sentiment Analyzer</h3>
+            <p class="project-desc">Aggregates financial news headlines and uses NLP to predict short-term sentiment shifts, displayed on a live dashboard.</p>
+            <div class="project-footer">
+              <span class="project-team">Solo · Winter 2025</span>
+              <a href="#" class="btn btn-sm btn-ghost">View →</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Submit your project -->
+    <section class="section" style="background:var(--bg-1);" id="submit">
+      <div class="container" style="max-width:640px;">
+        <div class="section-header aos">
+          <span class="section-tag">Showcase</span>
+          <h2>Built something <span class="gradient-text">cool?</span></h2>
+          <p>Submit your project to be featured in our gallery. Open to any CodeReach student or alumni.</p>
+        </div>
+        <div class="form-card aos">
+          <form id="project-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="p-first">Your Name *</label>
+                <input type="text" id="p-first" name="name" placeholder="Jane Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="p-email">Email *</label>
+                <input type="email" id="p-email" name="email" placeholder="jane@example.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="p-name">Project Name *</label>
+              <input type="text" id="p-name" name="project_name" placeholder="e.g. StudyBot" required />
+            </div>
+            <div class="form-group">
+              <label for="p-category">Category *</label>
+              <select id="p-category" name="category" required>
+                <option value="">Select...</option>
+                <option>Machine Learning</option>
+                <option>NLP / LLMs</option>
+                <option>Computer Vision</option>
+                <option>Application / Product</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="p-desc">Project Description *</label>
+              <textarea id="p-desc" name="description" placeholder="Briefly describe what your project does, how it was built, and what you learned..." required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="p-link">GitHub / Demo Link</label>
+              <input type="url" id="p-link" name="github_link" placeholder="https://github.com/..." />
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">Submit Project →</button>
+            <div class="success-msg" id="project-success">
+              🚀 Awesome! We'll review your submission and add it to the gallery soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <script src="js/nav.js"></script>
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.aos').forEach(el => observer.observe(el));
+
+    // Filter logic
+    document.getElementById('project-filter').addEventListener('click', e => {
+      const btn = e.target.closest('.filter-btn');
+      if (!btn) return;
+
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.dataset.filter;
+      document.querySelectorAll('#projects-grid .card').forEach(card => {
+        const tags = card.dataset.tags || '';
+        card.style.display = (filter === 'all' || tags.includes(filter)) ? '' : 'none';
+      });
+    });
+
+    const PROJECTS_ENDPOINT = 'https://formspree.io/f/mwvaazqj';
+
+    document.getElementById('project-form').addEventListener('submit', async e => {
+      e.preventDefault();
+      const btn = e.target.querySelector('[type=submit]');
+      btn.textContent = 'Sending…';
+      btn.disabled = true;
+      try {
+        const res = await fetch(PROJECTS_ENDPOINT, {
+          method: 'POST',
+          body: new FormData(e.target),
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          document.getElementById('project-success').style.display = 'block';
+          e.target.reset();
+          btn.textContent = 'Submitted ✓';
+        } else {
+          btn.textContent = 'Error — please try again';
+          btn.disabled = false;
+        }
+      } catch {
+        btn.textContent = 'Error — please try again';
+        btn.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>
