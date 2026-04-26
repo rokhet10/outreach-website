@@ -15,32 +15,45 @@
       <div class="hero-bg"></div>
       <div class="hero-grid"></div>
       <div class="hero-content">
-        <!-- <div class="hero-badge">
-          <span class="pulse-dot"></span>
-          Now accepting applications for Spring cohort
-        </div> -->
-        <h1>Learn AI &amp; CS.<br><span class="gradient-text">Shape the Future.</span></h1>
-        <p>Free workshops, live Zoom sessions, and hands-on projects for students who want to break into AI and computer science — no experience needed.</p>
-        <div class="hero-btns">
-          <a href="learn.html" class="btn btn-primary">Join as a Student →</a>
-          <a href="teach.html" class="btn btn-secondary">Volunteer to Teach</a>
+        <div class="hero-left">
+          <h1>Learn AI &amp; CS.<br><span class="gradient-text">Shape the Future.</span></h1>
+          <p>Free workshops, live Zoom sessions, and hands-on projects for students who want to break into AI and computer science — no experience needed.</p>
+          <div class="hero-btns">
+            <a href="learn.html" class="btn btn-primary">Join as a Student →</a>
+            <a href="teach.html" class="btn btn-secondary">Volunteer to Teach</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <div class="hero-stat-num">5+</div>
+              <div class="hero-stat-label">Students Reached</div>
+            </div>
+            <div>
+              <div class="hero-stat-num">1</div>
+              <div class="hero-stat-label">Workshops Hosted</div>
+            </div>
+            <div>
+              <div class="hero-stat-num">2</div>
+              <div class="hero-stat-label">Volunteer Instructors</div>
+            </div>
+            <div>
+              <div class="hero-stat-num">100%</div>
+              <div class="hero-stat-label">Free &amp; Open Access</div>
+            </div>
+          </div>
         </div>
-        <div class="hero-stats">
-          <div>
-            <div class="hero-stat-num">5+</div>
-            <div class="hero-stat-label">Students Reached</div>
-          </div>
-          <div>
-            <div class="hero-stat-num">1</div>
-            <div class="hero-stat-label">Workshops Hosted</div>
-          </div>
-          <div>
-            <div class="hero-stat-num">2</div>
-            <div class="hero-stat-label">Volunteer Instructors</div>
-          </div>
-          <div>
-            <div class="hero-stat-num">100%</div>
-            <div class="hero-stat-label">Free &amp; Open Access</div>
+        <div class="hero-right">
+          <div class="code-terminal">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <span class="terminal-title">neural_net.py</span>
+            </div>
+            <div class="terminal-body">
+              <pre id="terminal-code"></pre>
+            </div>
           </div>
         </div>
       </div>
@@ -172,6 +185,51 @@
       entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
     }, { threshold: 0.12 });
     document.querySelectorAll('.aos').forEach(el => observer.observe(el));
+  </script>
+  <script>
+    // Animated code terminal
+    (function () {
+      const K = 'ck', F = 'cf', C = 'cc', N = 'cn', S = 'cs', V = 'cv', O = 'co';
+      const k = (cls, t) => `<span class="t-${cls}">${t}</span>`;
+
+      const codeLines = [
+        `${k(K,'import')} numpy ${k(K,'as')} np`,
+        ``,
+        `${k(C,'# Build a neural network layer')}`,
+        `${k(K,'def')} ${k(F,'relu')}(x):`,
+        `    ${k(K,'return')} np.${k(F,'maximum')}(${k(N,'0')}, x)`,
+        ``,
+        `${k(K,'def')} ${k(F,'forward')}(X, W, b):`,
+        `    z ${k(O,'=')} X ${k(O,'@')} W ${k(O,'+')} b`,
+        `    ${k(K,'return')} ${k(F,'relu')}(z)`,
+        ``,
+        `X ${k(O,'=')} np.${k(F,'array')}([[${k(N,'0.5')}, ${k(N,'0.8')}, ${k(N,'0.2')}]])`,
+        `W ${k(O,'=')} np.random.${k(F,'randn')}(${k(N,'3')}, ${k(N,'4')})`,
+        `b ${k(O,'=')} np.${k(F,'zeros')}(${k(N,'4')})`,
+        ``,
+        `out ${k(O,'=')} ${k(F,'forward')}(X, W, b)`,
+        `${k(V,'print')}(${k(S,'"Output:"')}, out)`,
+        `${k(C,'# Output: [[0.  1.2  0.  0.8]]  ✓')}`,
+      ];
+
+      const el = document.getElementById('terminal-code');
+      if (!el) return;
+
+      async function run() {
+        let content = '';
+        for (let i = 0; i < codeLines.length; i++) {
+          const pause = i === 0 ? 800 : codeLines[i] === '' ? 180 : 90 + Math.random() * 110;
+          await new Promise(r => setTimeout(r, pause));
+          content += codeLines[i] + '\n';
+          el.innerHTML = content + '<span class="tcursor">▌</span>';
+        }
+        await new Promise(r => setTimeout(r, 3500));
+        el.innerHTML = '';
+        run();
+      }
+
+      run();
+    })();
   </script>
 </body>
 </html>
