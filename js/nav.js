@@ -14,8 +14,6 @@ const NAV_HTML = `
       <li><a href="about.html"   class="nav-link" data-page="about">About</a></li>
       <li><a href="learn.html"   class="nav-link" data-page="learn">Learn</a></li>
       <li><a href="teach.html"   class="nav-link" data-page="teach">Teach</a></li>
-      <li><a href="sessions.html" class="nav-link" data-page="sessions">Sessions</a></li>
-      <li><a href="projects.html" class="nav-link" data-page="projects">Projects</a></li>
       <li><a href="learn.html"   class="nav-link nav-cta">Get Started →</a></li>
     </ul>
     <button class="hamburger" id="hamburger" aria-label="Open menu">
@@ -35,8 +33,6 @@ const FOOTER_HTML = `
       <h4>Learn</h4>
       <ul>
         <li><a href="learn.html">Sign Up</a></li>
-        <li><a href="sessions.html">Recorded Sessions</a></li>
-        <li><a href="projects.html">Projects</a></li>
       </ul>
     </div>
     <div class="footer-col">
