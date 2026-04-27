@@ -409,6 +409,102 @@ main { padding-top: var(--nav-h); }
   margin-top: 0.3rem;
 }
 
+/* ── Summer Camp Banner ─────────────────────────────────────── */
+.camp-banner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 3rem;
+  align-items: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border-bright);
+  border-radius: 20px;
+  padding: 2.75rem 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.camp-banner::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 5px;
+  background: var(--gradient);
+  border-radius: 20px 0 0 20px;
+}
+
+.camp-banner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 60% 80% at 100% 50%, rgba(124,58,237,0.06), transparent);
+  pointer-events: none;
+}
+
+.camp-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--green);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.875rem;
+}
+
+.camp-banner-left h2  { margin-bottom: 0.75rem; }
+.camp-banner-left > p { color: var(--text-2); font-size: 0.975rem; max-width: 520px; margin-bottom: 1.5rem; }
+
+.camp-highlights {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.camp-highlights li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+  color: var(--text-2);
+}
+
+.camp-bullet { font-size: 1rem; flex-shrink: 0; }
+
+.camp-actions { display: flex; gap: 0.875rem; flex-wrap: wrap; }
+
+.camp-card-stack {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  min-width: 260px;
+}
+
+.camp-info-card {
+  background: var(--bg-1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.875rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.camp-info-icon   { font-size: 1.4rem; flex-shrink: 0; }
+.camp-info-label  { font-size: 0.7rem; color: var(--text-3); font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; }
+.camp-info-val    { font-size: 0.875rem; font-weight: 600; color: var(--text-1); margin-top: 0.1rem; }
+
+@media (max-width: 900px) {
+  .camp-banner       { grid-template-columns: 1fr; padding: 2rem; }
+  .camp-card-stack   { grid-template-columns: repeat(4, 1fr); min-width: unset; }
+}
+
+@media (max-width: 680px) {
+  .camp-card-stack   { grid-template-columns: 1fr 1fr; }
+}
+
 /* ── Code Terminal ──────────────────────────────────────────── */
 .code-terminal {
   width: 100%;
