@@ -6,6 +6,10 @@
 const SITE_NAME = "CodeReach";
 
 const NAV_HTML = `
+<a href="learn.html#signup" class="announce-bar">
+  <span class="pulse-dot"></span>
+  <span><strong>AI &amp; CS Summer Camp</strong> — Free, beginner-friendly, starts June. Reserve your spot&nbsp;→</span>
+</a>
 <nav>
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">⚡ ${SITE_NAME}</a>

@@ -25,6 +25,7 @@
   --text-2:        #4b5563;
   --text-3:        #9ca3af;
   --gradient:      linear-gradient(135deg, #7c3aed, #0891b2);
+  --announce-h:    40px;
   --nav-h:         68px;
   --radius:        14px;
   --radius-sm:     8px;
@@ -63,10 +64,33 @@ h3 { font-family: 'Space Grotesk', sans-serif; font-size: 1.2rem; font-weight: 6
   background-clip: text;
 }
 
+/* ── Announcement Bar ───────────────────────────────────────── */
+.announce-bar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.55rem 1.5rem;
+  background: var(--gradient);
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  transition: opacity 0.2s;
+  height: var(--announce-h);
+}
+
+.announce-bar:hover { opacity: 0.92; }
+.announce-bar .pulse-dot { background: #fff; box-shadow: 0 0 8px rgba(255,255,255,0.6); flex-shrink: 0; }
+
 /* ── Navigation ─────────────────────────────────────────────── */
 nav {
   position: fixed;
-  top: 0; left: 0; right: 0;
+  top: var(--announce-h); left: 0; right: 0;
   height: var(--nav-h);
   background: var(--nav-bg);
   backdrop-filter: blur(24px);
@@ -151,7 +175,7 @@ nav {
 }
 
 /* ── Layout Helpers ─────────────────────────────────────────── */
-main { padding-top: var(--nav-h); }
+main { padding-top: calc(var(--nav-h) + var(--announce-h)); }
 
 .container {
   max-width: 1200px;
@@ -882,7 +906,7 @@ footer {
   .nav-links.open {
     display: flex;
     position: fixed;
-    top: var(--nav-h);
+    top: calc(var(--nav-h) + var(--announce-h));
     left: 0; right: 0;
     background: var(--nav-mobile-bg);
     backdrop-filter: blur(24px);
