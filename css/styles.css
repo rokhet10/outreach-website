@@ -453,6 +453,123 @@ main { padding-top: calc(var(--nav-h) + var(--announce-h)); }
   margin-top: 0.3rem;
 }
 
+/* ── Rohan Khetan Profile Page ──────────────────────────────── */
+.rk-hero {
+  padding: 5rem 0 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.rk-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 70% 60% at 50% 0%, rgba(124,58,237,0.08), transparent);
+  pointer-events: none;
+}
+
+.rk-profile {
+  display: flex;
+  gap: 3.5rem;
+  align-items: center;
+  max-width: 820px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.rk-pic-wrap {
+  position: relative;
+  width: 148px;
+  height: 148px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 4px var(--bg-0), 0 0 0 7px var(--border-bright);
+}
+
+.rk-pic-fallback {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: var(--gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.rk-pic {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.rk-intro h1  { margin-bottom: 0.35rem; }
+
+.rk-tagline {
+  color: var(--purple);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  margin-bottom: 0.4rem;
+}
+
+.rk-location {
+  color: var(--text-3);
+  font-size: 0.825rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.rk-bio {
+  color: var(--text-2);
+  font-size: 1rem;
+  line-height: 1.75;
+  max-width: 500px;
+  margin-bottom: 1.75rem;
+}
+
+.rk-bio a { color: var(--purple); text-decoration: none; font-weight: 500; }
+.rk-bio a:hover { text-decoration: underline; }
+
+.rk-socials { display: flex; gap: 0.65rem; flex-wrap: wrap; }
+
+.rk-social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.5rem 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  color: var(--text-2);
+  font-size: 0.875rem;
+  font-weight: 500;
+  background: var(--bg-card);
+  transition: all 0.2s;
+}
+
+.rk-social-btn:hover {
+  border-color: var(--border-bright);
+  color: var(--purple);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(109,40,217,0.1);
+}
+
+@media (max-width: 680px) {
+  .rk-profile   { flex-direction: column; text-align: center; gap: 1.75rem; align-items: center; }
+  .rk-socials   { justify-content: center; }
+  .rk-bio       { margin-left: auto; margin-right: auto; }
+  .rk-location  { justify-content: center; }
+}
+
 /* ── Summer Camp Banner ─────────────────────────────────────── */
 .camp-banner {
   display: grid;
