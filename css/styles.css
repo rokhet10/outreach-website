@@ -71,21 +71,41 @@ h3 { font-family: 'Space Grotesk', sans-serif; font-size: 1.2rem; font-weight: 6
   z-index: 1001;
   display: flex;
   align-items: center;
+  background: var(--gradient);
+  color: #fff;
+  height: var(--announce-h);
+}
+
+.announce-bar-link {
+  flex: 1;
+  display: flex;
+  align-items: center;
   justify-content: center;
   gap: 0.6rem;
   padding: 0.55rem 1.5rem;
-  background: var(--gradient);
   color: #fff;
   font-size: 0.875rem;
   font-weight: 500;
   text-decoration: none;
   text-align: center;
   transition: opacity 0.2s;
-  height: var(--announce-h);
 }
 
-.announce-bar:hover { opacity: 0.92; }
-.announce-bar .pulse-dot { background: #fff; box-shadow: 0 0 8px rgba(255,255,255,0.6); flex-shrink: 0; }
+.announce-bar-link:hover { opacity: 0.88; }
+.announce-bar-link .pulse-dot { background: #fff; box-shadow: 0 0 8px rgba(255,255,255,0.6); flex-shrink: 0; }
+
+.announce-close {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.75);
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 0 1rem;
+  height: 100%;
+  flex-shrink: 0;
+  transition: color 0.2s;
+}
+.announce-close:hover { color: #fff; }
 
 /* ── Navigation ─────────────────────────────────────────────── */
 nav {

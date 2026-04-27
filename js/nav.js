@@ -6,10 +6,13 @@
 const SITE_NAME = "CodeReach";
 
 const NAV_HTML = `
-<a href="learn.html#signup" class="announce-bar">
-  <span class="pulse-dot"></span>
-  <span><strong>AI &amp; CS Summer Camp</strong> — Free, beginner-friendly, starts June. Reserve your spot&nbsp;→</span>
-</a>
+<div class="announce-bar" id="announce-bar">
+  <a href="learn.html#signup" class="announce-bar-link">
+    <span class="pulse-dot"></span>
+    <span><strong>AI &amp; CS Summer Camp</strong> — Free, beginner-friendly, starts June. Reserve your spot&nbsp;→</span>
+  </a>
+  <button class="announce-close" id="announce-close" aria-label="Dismiss">✕</button>
+</div>
 <nav>
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">⚡ ${SITE_NAME}</a>
@@ -69,6 +72,13 @@ document.addEventListener('DOMContentLoaded', () => {
     main.insertAdjacentHTML('beforebegin', NAV_HTML);
     main.insertAdjacentHTML('afterend', FOOTER_HTML);
   }
+
+  // Announcement bar dismiss
+  document.getElementById('announce-close')?.addEventListener('click', () => {
+    const bar = document.getElementById('announce-bar');
+    bar.style.display = 'none';
+    document.documentElement.style.setProperty('--announce-h', '0px');
+  });
 
   // Highlight active nav link
   const page = document.body.dataset.page || '';
