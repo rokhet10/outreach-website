@@ -56,7 +56,6 @@ const FOOTER_HTML = `
         <li><a href="mailto:rohankhetan10@gmail.com">Email Us</a></li>
         <li><a href="https://instagram.com/rohankhetan_" target="_blank" rel="noopener">Instagram</a></li>
         <li><a href="https://twitter.com/rohan__khetan" target="_blank" rel="noopener">Twitter / X</a></li>
-        <li><a href="rohan-khetan.html">About Rohan →</a></li>
       </ul>
     </div>
   </div>
