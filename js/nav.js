@@ -60,8 +60,8 @@ const FOOTER_HTML = `
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© ${new Date().getFullYear()} ${SITE_NAME}. All rights reserved.</span>
-    <span><a href="rohan-khetan.html" style="color:inherit;text-decoration:none;">Rohan Khetan</a> · Built to inspire the next generation.</span>
+    <span>© ${new Date().getFullYear()} ${SITE_NAME}. All rights reserved. · <a href="rohan-khetan.html" style="color:inherit;text-decoration:none;">Rohan Khetan</a></span>
+    <span>Built to inspire the next generation.</span>
   </div>
 </footer>`;
 
