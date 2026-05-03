@@ -34,7 +34,7 @@ const FOOTER_HTML = `
   <div class="footer-inner">
     <div class="footer-brand">
       <a href="index.html" class="nav-logo">⚡ ${SITE_NAME}</a>
-      <p>Empowering the next generation of AI and CS innovators through hands-on learning, mentorship, and community.</p>
+      <p>Empowering the next generation of AI and CS innovators through hands-on learning, mentorship, and community. Founded by <a href="rohan-khetan.html" style="color:var(--purple);text-decoration:none;">Rohan Khetan</a>.</p>
     </div>
     <div class="footer-col">
       <h4>Learn</h4>
