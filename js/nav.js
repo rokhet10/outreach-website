@@ -34,7 +34,7 @@ const FOOTER_HTML = `
   <div class="footer-inner">
     <div class="footer-brand">
       <a href="index.html" class="nav-logo">⚡ ${SITE_NAME}</a>
-      <p>Empowering the next generation of AI and CS innovators through hands-on learning, mentorship, and community. Founded by <a href="rohan-khetan.html" style="color:var(--purple);text-decoration:none;">Rohan Khetan</a>.</p>
+      <p>Empowering the next generation of AI and CS innovators through hands-on learning, mentorship, and community.</p>
     </div>
     <div class="footer-col">
       <h4>Learn</h4>
@@ -61,7 +61,7 @@ const FOOTER_HTML = `
   </div>
   <div class="footer-bottom">
     <span>© ${new Date().getFullYear()} ${SITE_NAME}. All rights reserved.</span>
-    <span>Built to inspire the next generation.</span>
+    <span><a href="rohan-khetan.html" style="color:inherit;text-decoration:none;">Rohan Khetan</a> · Built to inspire the next generation.</span>
   </div>
 </footer>`;
 
