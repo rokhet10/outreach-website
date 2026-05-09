@@ -509,6 +509,7 @@ main { padding-top: calc(var(--nav-h) + var(--announce-h)); }
   border-radius: 50%;
 }
 
+.rk-intro { flex: 1; }
 .rk-intro h1  { margin-bottom: 0.35rem; }
 
 .rk-tagline {
@@ -532,7 +533,6 @@ main { padding-top: calc(var(--nav-h) + var(--announce-h)); }
   color: var(--text-2);
   font-size: 1rem;
   line-height: 1.75;
-  max-width: 500px;
   margin-bottom: 1.75rem;
 }
 
