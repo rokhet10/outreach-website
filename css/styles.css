@@ -479,8 +479,8 @@ main { padding-top: calc(var(--nav-h) + var(--announce-h)); }
 
 .rk-pic-wrap {
   position: relative;
-  width: 148px;
-  height: 148px;
+  width: 210px;
+  height: 210px;
   border-radius: 50%;
   flex-shrink: 0;
   box-shadow: 0 0 0 4px var(--bg-0), 0 0 0 7px var(--border-bright);
@@ -536,6 +536,7 @@ main { padding-top: calc(var(--nav-h) + var(--announce-h)); }
   margin-bottom: 1.75rem;
 }
 
+.rk-bio p + p { margin-top: 1rem; }
 .rk-bio a { color: var(--purple); text-decoration: none; font-weight: 500; }
 .rk-bio a:hover { text-decoration: underline; }
 
