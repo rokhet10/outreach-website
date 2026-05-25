@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f0f26"/>
+      <stop offset="100%" stop-color="#141438"/>
+    </linearGradient>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#0891b2"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="rgba(8,145,178,0.15)"/>
+      <stop offset="100%" stop-color="rgba(8,145,178,0)"/>
+    </radialGradient>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M 80 0 L 0 0 0 80" fill="none" stroke="rgba(139,92,246,0.06)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1080" height="1920" fill="url(#bg)"/>
+  <rect width="1080" height="1920" fill="url(#grid)"/>
+  <rect width="1080" height="1920" fill="url(#glow)"/>
+
+  <!-- Logo -->
+  <text x="540" y="180" font-family="Georgia, serif" font-style="italic" font-size="52" font-weight="700" fill="url(#grad)" text-anchor="middle">⚡ CodeReach</text>
+  <line x1="340" y1="220" x2="740" y2="220" stroke="rgba(139,92,246,0.3)" stroke-width="1.5"/>
+
+  <!-- Headline -->
+  <text x="540" y="400" font-family="Georgia, serif" font-style="italic" font-size="70" font-weight="700" fill="white" text-anchor="middle">What you'll</text>
+  <text x="540" y="490" font-family="Georgia, serif" font-style="italic" font-size="70" font-weight="700" fill="url(#grad)" text-anchor="middle">learn &amp; build</text>
+
+  <line x1="200" y1="540" x2="880" y2="540" stroke="rgba(139,92,246,0.2)" stroke-width="1"/>
+
+  <!-- Week rows -->
+  <!-- Week 1 -->
+  <rect x="80" y="580" width="920" height="130" rx="16" fill="rgba(124,58,237,0.1)" stroke="rgba(124,58,237,0.25)" stroke-width="1.5"/>
+  <text x="140" y="660" font-family="Georgia, serif" font-size="52">🐍</text>
+  <text x="220" y="638" font-family="Georgia, serif" font-size="30" fill="rgba(255,255,255,0.45)">Week 1</text>
+  <text x="220" y="678" font-family="Georgia, serif" font-size="38" font-weight="700" fill="white">Intro to Python</text>
+
+  <!-- Week 2 -->
+  <rect x="80" y="730" width="920" height="130" rx="16" fill="rgba(8,145,178,0.08)" stroke="rgba(8,145,178,0.2)" stroke-width="1.5"/>
+  <text x="140" y="810" font-family="Georgia, serif" font-size="52">🔁</text>
+  <text x="220" y="788" font-family="Georgia, serif" font-size="30" fill="rgba(255,255,255,0.45)">Week 2</text>
+  <text x="220" y="828" font-family="Georgia, serif" font-size="38" font-weight="700" fill="white">Build real programs</text>
+
+  <!-- Week 3 -->
+  <rect x="80" y="880" width="920" height="130" rx="16" fill="rgba(124,58,237,0.1)" stroke="rgba(124,58,237,0.25)" stroke-width="1.5"/>
+  <text x="140" y="960" font-family="Georgia, serif" font-size="52">⚙️</text>
+  <text x="220" y="938" font-family="Georgia, serif" font-size="30" fill="rgba(255,255,255,0.45)">Week 3</text>
+  <text x="220" y="978" font-family="Georgia, serif" font-size="38" font-weight="700" fill="white">Functions &amp; intro to AI</text>
+
+  <!-- Week 4 -->
+  <rect x="80" y="1030" width="920" height="130" rx="16" fill="rgba(8,145,178,0.08)" stroke="rgba(8,145,178,0.2)" stroke-width="1.5"/>
+  <text x="140" y="1110" font-family="Georgia, serif" font-size="52">🤖</text>
+  <text x="220" y="1088" font-family="Georgia, serif" font-size="30" fill="rgba(255,255,255,0.45)">Week 4</text>
+  <text x="220" y="1128" font-family="Georgia, serif" font-size="38" font-weight="700" fill="white">Real AI with Python</text>
+
+  <!-- Week 5 -->
+  <rect x="80" y="1180" width="920" height="130" rx="16" fill="rgba(124,58,237,0.1)" stroke="rgba(124,58,237,0.25)" stroke-width="1.5"/>
+  <text x="140" y="1260" font-family="Georgia, serif" font-size="52">💡</text>
+  <text x="220" y="1238" font-family="Georgia, serif" font-size="30" fill="rgba(255,255,255,0.45)">Week 5</text>
+  <text x="220" y="1278" font-family="Georgia, serif" font-size="38" font-weight="700" fill="white">Plan your final project</text>
+
+  <!-- Week 6 -->
+  <rect x="80" y="1330" width="920" height="130" rx="16" fill="rgba(8,145,178,0.08)" stroke="rgba(8,145,178,0.2)" stroke-width="1.5"/>
+  <text x="140" y="1410" font-family="Georgia, serif" font-size="52">🚀</text>
+  <text x="220" y="1388" font-family="Georgia, serif" font-size="30" fill="rgba(255,255,255,0.45)">Week 6</text>
+  <text x="220" y="1428" font-family="Georgia, serif" font-size="38" font-weight="700" fill="white">Finish &amp; demo your project!</text>
+
+  <!-- Footer note -->
+  <text x="540" y="1560" font-family="Georgia, serif" font-style="italic" font-size="36" fill="rgba(255,255,255,0.4)" text-anchor="middle">~2 hrs/week · 80% hands-on coding</text>
+
+  <!-- CTA -->
+  <rect x="240" y="1650" width="600" height="90" rx="45" fill="url(#grad)"/>
+  <text x="540" y="1706" font-family="Georgia, serif" font-size="40" font-weight="700" fill="white" text-anchor="middle">Reserve Your Spot →</text>
+  <text x="540" y="1800" font-family="Georgia, serif" font-size="32" fill="rgba(255,255,255,0.45)" text-anchor="middle">Link in bio · codereach.org</text>
+</svg>

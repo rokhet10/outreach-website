@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+Disallow: /__media__/
 Sitemap: https://codereach.org/sitemap.xml

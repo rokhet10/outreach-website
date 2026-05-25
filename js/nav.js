@@ -9,7 +9,7 @@ const NAV_HTML = `
 <div class="announce-bar" id="announce-bar">
   <a href="learn.html#summer-camp" class="announce-bar-link">
     <span class="pulse-dot"></span>
-    <span><strong>AI &amp; CS Summer Camp</strong> — Free, beginner-friendly, starts June. Reserve your spot&nbsp;→</span>
+    <span><strong>AI &amp; CS Summer Camp (6 Weeks)</strong> — Free, beginner-friendly, starts June. Reserve your spot&nbsp;→</span>
   </a>
   <button class="announce-close" id="announce-close" aria-label="Dismiss">✕</button>
 </div>
@@ -18,7 +18,13 @@ const NAV_HTML = `
     <a href="index.html" class="nav-logo">⚡ ${SITE_NAME}</a>
     <ul class="nav-links" id="nav-links">
       <li><a href="index.html"    class="nav-link" data-page="index">Home</a></li>
-      <li><a href="about.html"   class="nav-link" data-page="about">About</a></li>
+      <li class="nav-has-dropdown">
+        <a href="about.html" class="nav-link" data-page="about">About ▾</a>
+        <div class="nav-dropdown">
+          <a href="about.html" class="nav-dropdown-item">About CodeReach</a>
+          <a href="leadership.html" class="nav-dropdown-item">Leadership</a>
+        </div>
+      </li>
       <li><a href="learn.html"   class="nav-link" data-page="learn">Learn</a></li>
       <li><a href="teach.html"   class="nav-link" data-page="teach">Teach</a></li>
       <li><a href="learn.html"   class="nav-link nav-cta">Get Started →</a></li>
@@ -99,6 +105,21 @@ document.addEventListener('DOMContentLoaded', () => {
   // Close mobile nav when a link is clicked
   navLinks?.querySelectorAll('a').forEach(a => {
     a.addEventListener('click', () => navLinks.classList.remove('open'));
+  });
+
+  // Dropdown: toggle on click (for touch devices), close on outside click
+  document.querySelectorAll('.nav-has-dropdown > a').forEach(trigger => {
+    trigger.addEventListener('click', e => {
+      const li = trigger.parentElement;
+      const isOpen = li.classList.contains('dropdown-open');
+      document.querySelectorAll('.nav-has-dropdown').forEach(el => el.classList.remove('dropdown-open'));
+      if (!isOpen) { e.preventDefault(); li.classList.add('dropdown-open'); }
+    });
+  });
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.nav-has-dropdown')) {
+      document.querySelectorAll('.nav-has-dropdown').forEach(el => el.classList.remove('dropdown-open'));
+    }
   });
 
   // Follow system color scheme automatically
