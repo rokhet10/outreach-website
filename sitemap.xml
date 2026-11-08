@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://codereach.org/</loc>
     <lastmod>2026-05-20</lastmod>
@@ -7,8 +8,12 @@
   </url>
   <url>
     <loc>https://codereach.org/rohan-khetan.html</loc>
-    <lastmod>2026-05-20</lastmod>
+    <lastmod>2026-07-02</lastmod>
     <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://codereach.org/images/rohan-khetan-codereach-northville.jpg</image:loc>
+      <image:title>Rohan Khetan, Founder of CodeReach, Northville MI</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://codereach.org/about.html</loc>
@@ -19,6 +24,11 @@
     <loc>https://codereach.org/leadership.html</loc>
     <lastmod>2026-05-20</lastmod>
     <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://codereach.org/chapters.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://codereach.org/learn.html</loc>
@@ -50,9 +60,20 @@
     <lastmod>2026-05-20</lastmod>
     <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://codereach.org/maheswar-dileep.html</loc>
-    <lastmod>2026-05-20</lastmod>
+    <loc>https://codereach.org/ananth-kannapan.html</loc>
+    <lastmod>2026-05-26</lastmod>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://codereach.org/contact.html</loc>
+    <lastmod>2026-05-26</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://codereach.org/privacy.html</loc>
+    <lastmod>2026-05-26</lastmod>
+    <priority>0.5</priority>
   </url>
 </urlset>

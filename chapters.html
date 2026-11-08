@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E618HTB2QR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-E618HTB2QR');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapters — CodeReach</title>
+  <meta name="description" content="Bring CodeReach to your school or community. Start a chapter and help make free AI and CS education accessible near you." />
+  <meta name="author" content="Rohan Khetan" />
+  <link rel="canonical" href="https://codereach.org/chapters.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://codereach.org/chapters.html" />
+  <meta property="og:title" content="Chapters — CodeReach" />
+  <meta property="og:description" content="Bring CodeReach to your school or community. Start a chapter and help make free AI and CS education accessible near you." />
+  <meta property="og:image" content="https://codereach.org/images/codereach-og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@rohan__khetan" />
+  <meta name="twitter:title" content="Chapters — CodeReach" />
+  <meta name="twitter:description" content="Bring CodeReach to your school or community. Start a chapter and help make free AI and CS education accessible near you." />
+  <meta name="twitter:image" content="https://codereach.org/images/codereach-og.png" />
+  <meta name="robots" content="index, follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/theme-init.js"></script>
+</head>
+<body data-page="chapters">
+  <main>
+
+    <section class="page-hero" style="padding-bottom:2.5rem;">
+      <div class="container">
+        <span class="section-tag">Get Involved</span>
+        <h1>Start a <span class="gradient-text">CodeReach chapter.</span></h1>
+        <p>Bring free AI and CS education to your own school or community — we'll help you get set up.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0;">
+      <div class="container" style="max-width:720px;">
+        <a href="teach.html?chapter=1#apply" aria-label="Fill out the chapter application form" style="display:block;text-decoration:none;">
+          <img
+            src="images/StartAChapter.png"
+            alt="Start a CodeReach Chapter flyer — click to apply"
+            class="card aos"
+            style="width:100%;height:auto;display:block;padding:0;overflow:hidden;cursor:pointer;"
+          />
+        </a>
+        <div style="text-align:center;margin-top:2rem;">
+          <a href="teach.html?chapter=1#apply" class="btn btn-primary">Apply to Start a Chapter →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <script src="js/nav.js"></script>
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0 });
+    document.querySelectorAll('.aos').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!--
+  Archived homepage popup — "Start a Chapter" flyer.
+  Replaced on index.html on 2026-10-12 with a "Sunday Night Series" announcement popup.
+  Not linked anywhere on the site. Kept for reference in case we want to bring it back.
+
+  To restore: paste the markup below back into index.html in place of the
+  #announce-overlay block, and swap the sessionStorage key in the script back
+  to 'cr_announce_start_chapter'. Relies on CSS classes .announce-modal-flyer,
+  .announce-flyer-img, .announce-flyer-footer in css/styles.css (left in place).
+-->
+<div id="announce-overlay" class="announce-overlay" role="dialog" aria-modal="true" aria-label="Start a Chapter">
+  <div class="announce-modal announce-modal-flyer">
+    <button class="announce-close" id="announce-close" aria-label="Close">&times;</button>
+    <a href="teach.html?chapter=1#apply" aria-label="Fill out the chapter application form">
+      <img src="images/StartAChapter.png" alt="Start a CodeReach Chapter flyer — click to apply" class="announce-flyer-img" />
+    </a>
+    <div class="announce-flyer-footer">
+      <a href="teach.html?chapter=1#apply" class="btn btn-primary btn-sm" style="flex:1;">Apply →</a>
+      <button class="btn btn-ghost btn-sm" id="announce-dismiss" style="flex:1;">Maybe later</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Announcement popup — show once per session
+  (function () {
+    const SEEN_KEY = 'cr_announce_start_chapter';
+    if (sessionStorage.getItem(SEEN_KEY)) return;
+    const overlay = document.getElementById('announce-overlay');
+    setTimeout(() => overlay.classList.add('visible'), 900);
+    function dismiss() {
+      overlay.classList.remove('visible');
+      sessionStorage.setItem(SEEN_KEY, '1');
+    }
+    document.getElementById('announce-close').addEventListener('click', dismiss);
+    document.getElementById('announce-dismiss').addEventListener('click', dismiss);
+    overlay.addEventListener('click', e => { if (e.target === overlay) dismiss(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') dismiss(); });
+  })();
+</script>

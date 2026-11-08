@@ -1,0 +1,24 @@
+/* Saved theme — navy/ocean */
+:root {
+  --bg-0:          #07101f;
+  --bg-1:          #0c1829;
+  --bg-card:       #101f32;
+  --bg-card-hover: #152638;
+  --border:        rgba(56, 189, 248, 0.14);
+  --border-bright: rgba(56, 189, 248, 0.38);
+  --purple:        #3b82f6;
+  --purple-dim:    #1d4ed8;
+  --purple-light:  #60a5fa;
+  --cyan:          #06b6d4;
+  --green:         #10b981;
+  --pink:          #f472b6;
+  --text-1:        #eef4ff;
+  --text-2:        #94a3b8;
+  --text-3:        #475569;
+  --gradient:      linear-gradient(135deg, #3b82f6, #06b6d4);
+}
+/* nav background:        rgba(7, 16, 31, 0.75)   */
+/* nav mobile open:       rgba(7, 16, 31, 0.97)   */
+/* form input background: rgba(255,255,255,0.04)  */
+/* hero-bg radials:       rgba(59,130,246,...)     */
+/* hero-grid:             rgba(139,92,246,0.04)   */

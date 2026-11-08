@@ -102,17 +102,17 @@
             <span class="tag tag-purple">1–2 hrs / session</span>
           </div>
           <div class="card aos">
-            <div style="font-size:2rem;margin-bottom:.75rem;">📝</div>
-            <h3>Curriculum Designer</h3>
-            <p style="color:var(--text-2);font-size:.875rem;margin-top:.5rem;margin-bottom:.875rem;">Create lesson plans, slide decks, exercises, and projects that other instructors can use.</p>
-            <span class="tag tag-cyan">Async · flexible hours</span>
-          </div>
-          <div class="card aos">
             <div style="font-size:2rem;margin-bottom:.75rem;">🧭</div>
             <h3>Student Mentor</h3>
             <p style="color:var(--text-2);font-size:.875rem;margin-top:.5rem;margin-bottom:.875rem;">Provide 1:1 or small-group mentorship to students working on projects or navigating their learning path.</p>
             <span class="tag tag-green">1 hr / week</span>
           </div>
+          <a href="chapters.html" class="card aos" style="text-decoration:none;display:block;">
+            <div style="font-size:2rem;margin-bottom:.75rem;">🚀</div>
+            <h3>Start a Chapter</h3>
+            <p style="color:var(--text-2);font-size:.875rem;margin-top:.5rem;margin-bottom:.875rem;">Bring CodeReach to your own school or community. We'll help you get set up and running.</p>
+            <span class="tag tag-pink">Ongoing commitment</span>
+          </a>
         </div>
       </div>
     </section>
@@ -155,6 +155,14 @@
                 <option>Multiple / Not sure yet</option>
               </select>
             </div>
+            <div class="form-group" style="flex-direction:row;align-items:center;gap:0.65rem;">
+              <input type="checkbox" id="t-chapter" name="want_chapter" value="Yes" style="width:auto;" />
+              <label for="t-chapter" style="margin:0;">🚀 I'm interested in starting a CodeReach chapter at my school or in my area</label>
+            </div>
+            <div class="form-group" id="chapter-location-group" style="display:none;">
+              <label for="t-chapter-location">Where would you like to start a chapter?</label>
+              <input type="text" id="t-chapter-location" name="chapter_location" placeholder="e.g. Ann Arbor, MI or Lincoln High School" />
+            </div>
             <div class="form-group">
               <label for="t-topic">Topic(s) You'd Like to Teach or Contribute</label>
               <input type="text" id="t-topic" name="topics" placeholder="e.g. Reinforcement Learning, Python, Computer Vision" />
@@ -193,6 +201,19 @@
       entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
     }, { threshold: 0.12 });
     document.querySelectorAll('.aos').forEach(el => observer.observe(el));
+
+    // Toggle chapter location field + pre-check when arriving from the Start a Chapter page
+    (function () {
+      const checkbox = document.getElementById('t-chapter');
+      const locationGroup = document.getElementById('chapter-location-group');
+      checkbox.addEventListener('change', () => {
+        locationGroup.style.display = checkbox.checked ? 'flex' : 'none';
+      });
+      if (new URLSearchParams(window.location.search).get('chapter') === '1') {
+        checkbox.checked = true;
+        locationGroup.style.display = 'flex';
+      }
+    })();
 
     const TEACH_ENDPOINT = 'https://formspree.io/f/mvzddyqy';
 

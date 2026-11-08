@@ -9,7 +9,7 @@ const NAV_HTML = `
 <div class="announce-bar" id="announce-bar">
   <a href="learn.html#summer-camp" class="announce-bar-link">
     <span class="pulse-dot"></span>
-    <span><strong>AI &amp; CS Summer Camp (6 Weeks)</strong> — Free, beginner-friendly, starts June. Reserve your spot&nbsp;→</span>
+    <span><strong>AI &amp; CS Summer Camp (6 Weeks)</strong> — Free, beginner-friendly, starts June. Join the waitlist&nbsp;→</span>
   </a>
   <button class="announce-close" id="announce-close" aria-label="Dismiss">✕</button>
 </div>
@@ -23,6 +23,7 @@ const NAV_HTML = `
         <div class="nav-dropdown">
           <a href="about.html" class="nav-dropdown-item">About CodeReach</a>
           <a href="leadership.html" class="nav-dropdown-item">Leadership</a>
+          <a href="chapters.html" class="nav-dropdown-item">Chapters</a>
         </div>
       </li>
       <li><a href="learn.html"   class="nav-link" data-page="learn">Learn</a></li>
@@ -40,25 +41,28 @@ const FOOTER_HTML = `
   <div class="footer-inner">
     <div class="footer-brand">
       <a href="index.html" class="nav-logo">⚡ ${SITE_NAME}</a>
-      <p>Empowering the next generation of AI and CS innovators through hands-on learning, mentorship, and community.</p>
+      <p>A free, student-led educational organization providing AI and computer science education to middle and high school students in Northville, Michigan and beyond.</p>
     </div>
     <div class="footer-col">
       <h4>Learn</h4>
       <ul>
         <li><a href="learn.html">Sign Up</a></li>
+        <li><a href="learn.html#summer-camp">Summer Camp</a></li>
+        <li><a href="sessions.html">Sessions</a></li>
       </ul>
     </div>
     <div class="footer-col">
       <h4>Get Involved</h4>
       <ul>
         <li><a href="teach.html">Teach / Mentor</a></li>
-        <li><a href="teach.html">Create Lessons</a></li>
         <li><a href="about.html">Our Mission</a></li>
+        <li><a href="leadership.html">Leadership</a></li>
       </ul>
     </div>
     <div class="footer-col">
       <h4>Connect</h4>
       <ul>
+        <li><a href="contact.html">Contact Us</a></li>
         <li><a href="mailto:rohankhetan10@gmail.com">Email Us</a></li>
         <li><a href="https://www.instagram.com/codereachofficial/" target="_blank" rel="noopener">Instagram</a></li>
         <li><a href="https://twitter.com/rohan__khetan" target="_blank" rel="noopener">Twitter / X</a></li>
@@ -66,8 +70,8 @@ const FOOTER_HTML = `
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© ${new Date().getFullYear()} ${SITE_NAME}. All rights reserved. · <a href="rohan-khetan.html" style="color:inherit;text-decoration:none;">Rohan Khetan</a></span>
-    <span>Built to inspire the next generation.</span>
+    <span>© ${new Date().getFullYear()} ${SITE_NAME}. All rights reserved. · <a href="rohan-khetan.html" style="color:inherit;text-decoration:none;">Rohan Khetan</a> ·<a href="privacy.html" style="color:inherit;text-decoration:none;">Privacy Policy</a></span>
+    <span>Free educational organization — no fees, no gatekeeping.</span>
   </div>
 </footer>`;
 

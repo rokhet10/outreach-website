@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E618HTB2QR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-E618HTB2QR');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — CodeReach</title>
+  <meta name="description" content="Get in touch with CodeReach. We're a free educational organization offering AI and CS workshops for students. Reach out with questions or to get involved." />
+  <link rel="canonical" href="https://codereach.org/contact.html" />
+  <meta name="robots" content="index, follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/theme-init.js"></script>
+</head>
+<body data-page="contact">
+  <main>
+
+    <section class="page-hero" style="padding-bottom:1rem;">
+      <div class="container">
+        <span class="section-tag">Get In Touch</span>
+        <h1>Contact <span class="gradient-text">CodeReach</span></h1>
+        <p style="color:var(--text-2);margin-top:0.75rem;max-width:560px;">Questions about our programs, workshops, or how to get involved? We'd love to hear from you.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:1rem;">
+      <div class="container" style="max-width:760px;">
+        <div class="grid-3 aos" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;margin-bottom:3rem;">
+
+          <div class="card">
+            <div class="feature-icon">✉️</div>
+            <h3>Email</h3>
+            <p style="color:var(--text-2);font-size:.875rem;margin-top:.5rem;">For general inquiries, program questions, or partnership opportunities.</p>
+            <a href="mailto:rohankhetan10@gmail.com" style="display:inline-block;margin-top:1rem;color:var(--purple);font-weight:600;font-size:.9rem;">rohankhetan10@gmail.com</a>
+          </div>
+
+          <div class="card">
+            <div class="feature-icon">📸</div>
+            <h3>Instagram</h3>
+            <p style="color:var(--text-2);font-size:.875rem;margin-top:.5rem;">Follow us for program updates, announcements, and student highlights.</p>
+            <a href="https://www.instagram.com/codereachofficial/" target="_blank" rel="noopener" style="display:inline-block;margin-top:1rem;color:var(--purple);font-weight:600;font-size:.9rem;">@codereachofficial</a>
+          </div>
+
+          <div class="card">
+            <div class="feature-icon">🐦</div>
+            <h3>Twitter / X</h3>
+            <p style="color:var(--text-2);font-size:.875rem;margin-top:.5rem;">Stay up to date with the latest from CodeReach and the CS education world.</p>
+            <a href="https://twitter.com/rohan__khetan" target="_blank" rel="noopener" style="display:inline-block;margin-top:1rem;color:var(--purple);font-weight:600;font-size:.9rem;">@rohan__khetan</a>
+          </div>
+
+        </div>
+
+        <div class="card aos" style="max-width:560px;">
+          <h3 style="margin-bottom:1rem;">About CodeReach</h3>
+          <p style="color:var(--text-2);font-size:.9rem;line-height:1.7;margin-bottom:1rem;">CodeReach is a free, student-led educational organization based in Northville, Michigan. We provide AI and computer science education to middle and high school students through live workshops, online sessions, and a free summer program — at no cost to students.</p>
+          <p style="color:var(--text-2);font-size:.9rem;line-height:1.7;">We are not a commercial entity. We do not charge for any programs or services.</p>
+          <div style="margin-top:1.25rem;">
+            <a href="about.html" class="btn btn-primary">Learn More About Us →</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+  <script src="js/nav.js"></script>
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0 });
+    document.querySelectorAll('.aos').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

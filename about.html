@@ -27,7 +27,7 @@
     "name": "Rohan Khetan",
     "jobTitle": "Founder & Instructor",
     "url": "https://codereach.org/rohan-khetan.html",
-    "image": "https://codereach.org/images/rohan-khetan.JPG",
+    "image": "https://codereach.org/images/rohan-khetan-codereach-northville.jpg",
     "sameAs": [
       "https://instagram.com/rohankhetan_",
       "https://twitter.com/rohan__khetan",
@@ -61,42 +61,90 @@
 <body data-page="about">
   <main>
 
-    <!-- Page Hero -->
-    <section class="page-hero" style="padding-bottom:1rem;">
-      <div class="container">
+    <!-- Hero -->
+    <section class="page-hero" style="padding-top:1.5rem;padding-bottom:0.75rem;">
+      <div class="container" style="max-width:720px;">
         <span class="section-tag">Our Story</span>
-        <h1>We believe AI education<br><span class="gradient-text">should be free.</span></h1>
+        <h2 style="margin-top:0.75rem;">We believe AI education<br><span class="gradient-text">should be free.</span></h2>
       </div>
     </section>
 
-    <!-- Mission -->
-    <section class="section" style="padding-top:1rem;">
-      <div class="container">
-        <div class="mission-block">
-          <div class="aos" style="grid-column:1/-1;max-width:700px;margin:0 auto;text-align:center;">
-            <div style="font-size:2.75rem;margin-bottom:1rem;">⚡</div>
-            <span class="section-tag">How It Started</span>
-            <h2 style="margin:0.875rem 0 1.25rem;">Built by students, <span class="gradient-text">for students.</span></h2>
-            <p style="color:var(--text-2);margin-bottom:1.25rem;text-align:left;">AI will change everything around you. The question is — are you ready?</p>
-            <p style="color:var(--text-2);margin-bottom:1.25rem;text-align:left;">I started coding in 5th grade with Scratch, building simple games and animations. Over time, I moved into Python, machine learning, and AI. What started as curiosity quickly became something I genuinely love.</p>
-            <p style="color:var(--text-2);margin-bottom:1.25rem;text-align:left;">At CodeREach, we realize that a lot of students never even get started because CS and AI feel intimidating at first. We think we need years of instruction just to begin. But in reality, a little exposure early on can completely change how we see technology. Once you build your first project, coding becomes exciting instead of overwhelming.</p>
-            <p style="color:var(--text-2);margin-bottom:1.25rem;text-align:left;">That’s why we started CodeReach — to make CS and AI education free, approachable, and accessible for every student. At CodeReach, you learn from students who understand your struggles. And if you ever get stuck, you can always reach out to a real person for help, guidance, or debugging.</p>
-            <p style="color:var(--text-2);text-align:left;">No gatekeeping. No experience needed. Just curiosity!</p>
+    <!-- Photo strip -->
+    <div class="photo-strip-outer">
+      <div class="photo-strip-viewport">
+        <div class="photo-strip-track" id="strip-track">
+          <div class="photo-strip-slide"><img src="images/Week1_3.JPG" alt="CodeReach summer camp Week 1" /></div>
+          <div class="photo-strip-slide"><img src="images/Week1_1.jpg" alt="CodeReach summer camp Week 1" /></div>
+          <div class="photo-strip-slide"><img src="images/Week1_2.JPG" alt="CodeReach summer camp Week 1" /></div>
+          <div class="photo-strip-slide"><img src="images/Ananth-Kannapan-teach.JPG" alt="CodeReach summer camp Week 1" /></div>
+          <div class="photo-strip-slide"><img src="images/Rohan-Khetan-teach.JPG" alt="CodeReach summer camp Week 1" /></div>
+          <div class="photo-strip-slide"><img src="images/IMG_5069.JPG" alt="CodeReach summer camp Week 1" /></div>
+          <div class="photo-strip-slide"><img src="images/Week6_1.JPG" alt="CodeReach summer camp Week 6" /></div>
+        </div>
+      </div>
+      <button class="strip-btn strip-prev" id="strip-prev" aria-label="Previous">&#8249;</button>
+      <button class="strip-btn strip-next" id="strip-next" aria-label="Next">&#8250;</button>
+    </div>
+
+    <!-- Origin story -->
+    <section class="section" style="padding-top:0;">
+      <div class="container" style="max-width:720px;">
+        <p style="color:var(--text-2);margin-bottom:1.25rem;line-height:1.8;">AI will change everything around us. The question is—are we ready?</p>
+        <p style="color:var(--text-2);margin-bottom:1.25rem;line-height:1.8;">The idea for CodeReach began when Rohan first discovered programming through Scratch in elementary school. What started with simple games and animations gradually grew into an interest in Python, machine learning, and AI. What began as curiosity slowly became something he genuinely loves building and learning about every day. Along the way, he realized how much early exposure can shape a student’s confidence and curiosity. Sometimes, all it takes is one project for coding to become exciting instead of intimidating.</p>
+        <p style="color:var(--text-2);margin-bottom:1.25rem;line-height:1.8;">That’s why we created CodeReach: a free, student-led initiative that makes computer science and AI approachable, hands-on, and accessible to everyone.</p>
+        <p style="color:var(--text-2);margin-bottom:1.25rem;line-height:1.8;">We believe students learn best by building. Instead of long lectures, we focus on real projects, practical skills, and creating an environment where it's okay to ask questions, make mistakes, and learn together. Because we're students too, we understand what it's like to be just getting started—and we're always happy to help.</p>
+        <p style="color:var(--text-2);margin-bottom:1.25rem;line-height:1.8;">Whether you've never written a line of code or you're simply curious about AI, you belong here.</p>
+        <p style="color:var(--text-2);line-height:1.8;">No gatekeeping. No experience needed. Just curiosity.</p>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="section" style="background:var(--bg-1);">
+      <div class="container" style="max-width:760px;">
+        <div class="section-header aos">
+          <span class="section-tag">From the Field</span>
+          <h2>What we've been <span class="gradient-text">up to</span></h2>
+        </div>
+        <div class="story-timeline">
+
+          <div class="timeline-entry aos">
+            <div class="timeline-date">June 2026</div>
+            <div class="timeline-content">
+              <h3>Summer Camp — Learning Python and AI</h3>
+              <p>Our first summer camp kicked off in Northville, bringing together students with a wide range of coding experience. By the end of the camp, they had written Python programs and ending with a ML project to predict breast cancer using AI models and a published dataset.</p>
+            </div>
           </div>
+
+          <div class="timeline-entry aos">
+            <div class="timeline-date">Summer 2026</div>
+            <div class="timeline-content">
+              <h3>Growing Beyond Northville</h3>
+              <p>We inspired students in different states and offered free curriculum so they could learn to code and teach others.</p>
+            </div>
+          </div>
+
+          <div class="timeline-entry aos">
+            <div class="timeline-date">Fall 2026</div>
+            <div class="timeline-content">
+              <h3>Fall Session</h3>
+              <p>Our 4–6 week Fall Python camp starts November 8, meeting Sundays via Zoom from 8–9 or 9:30 PM. The Zoom link is sent to registered participants.</p>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
+
     <!-- Team -->
     <section class="section">
       <div class="container">
         <div class="section-header aos">
           <span class="section-tag">Team</span>
           <h2>The people <span class="gradient-text">behind the mission</span></h2>
-          <p>A small but passionate team of students and volunteers driving AI education forward.</p>
         </div>
         <div class="team-grid">
           <a href="rohan-khetan.html" class="card team-card aos" style="text-decoration:none;">
-            <div class="team-avatar">RK<img src="images/rohan-khetan.JPG" alt="Rohan Khetan" onerror="this.remove()" /></div>
+            <div class="team-avatar">RK<img src="images/RohanKhetanProfile.JPG" alt="Rohan Khetan, Founder of CodeReach, Northville MI" style="object-position:center top;" onerror="this.remove()" /></div>
             <div class="team-name">Rohan Khetan</div>
             <div class="team-role">Founder &amp; Instructor</div>
             <div class="team-role">Northville High School, MI</div>
@@ -113,78 +161,42 @@
             <div class="team-role">Curriculum Designer</div>
             <div class="team-role">Northville High School, MI</div>
           </a>
-          <a href="abir-bajaj.html" class="card team-card aos" style="text-decoration:none;">
-            <div class="team-avatar">AB</div>
-            <div class="team-name">Abir Bajaj</div>
-            <div class="team-role">Media &amp; Outreach</div>
-            <div class="team-role">Northville High School, MI</div>
+          <a href="https://ashna.me" target="_blank" rel="noopener" class="card team-card aos" style="text-decoration:none;">
+            <div class="team-avatar">AK<img src="images/ashna-khetan-codereach-advisor.png" alt="Ashna Khetan, Advisor at CodeReach, Stanford AI researcher" onerror="this.remove()" /></div>
+            <div class="team-name">Ashna Khetan</div>
+            <div class="team-role">Advisor</div>
+            <div class="team-role">Stanford BS/MS &middot; NVIDIA AI</div>
           </a>
           <a href="kapil-inamdar.html" class="card team-card aos" style="text-decoration:none;">
-            <div class="team-avatar">KI<img src="images/kapil-inamdar.jpg" alt="Kapil Inamdar" onerror="this.remove()" /></div>
+            <div class="team-avatar">KI<img src="images/kapil-inamdar-codereach-northville.jpg" alt="Kapil Inamdar, Instructor at CodeReach, Northville MI" onerror="this.remove()" /></div>
             <div class="team-name">Kapil Inamdar</div>
-            <div class="team-role">Instructor</div>
-            <div class="team-role">Northville High School, MI</div>
-          </a>
-          <a href="vivek-patel.html" class="card team-card aos" style="text-decoration:none;">
-            <div class="team-avatar">VP</div>
-            <div class="team-name">Vivek Patel</div>
             <div class="team-role">Instructor</div>
             <div class="team-role">Northville High School, MI</div>
           </a>
           <a href="maheswar-dileep.html" class="card team-card aos" style="text-decoration:none;">
             <div class="team-avatar">MD</div>
             <div class="team-name">Maheswar Dileep</div>
+            <div class="team-role">Social Media &amp; Instructor</div>
+            <div class="team-role">Northville High School, MI</div>
+          </a>
+          <a href="ambreen-basram.html" class="card team-card aos" style="text-decoration:none;">
+            <div class="team-avatar">AB<img src="images/Ambreen_Basram.jpeg" alt="Ambreen Basram, Instructor at CodeReach, Northville MI" style="object-position:center 30%;" onerror="this.remove()" /></div>
+            <div class="team-name">Ambreen Basram</div>
             <div class="team-role">Instructor</div>
             <div class="team-role">Northville High School, MI</div>
           </a>
-          <!-- <a href="reya.html" class="card team-card aos" style="text-decoration:none;">
-            <div class="team-avatar">R</div>
-            <div class="team-name">Reya</div>
-            <div class="team-role">Instructor Computational Biology</div>
-            <div class="team-role">Novi High School, MI</div>
-          </a> -->
-          <a href="open-role.html" class="card team-card aos" style="text-decoration:none;">
+          <div class="card team-card aos">
             <div class="team-avatar" style="background:var(--border-bright);color:var(--purple);">+</div>
             <div class="team-name">Join Us</div>
             <div class="team-role">Open Role</div>
-          </a>
+          </div>
         </div>
         <div style="text-align:center;margin-top:2.5rem;">
           <a href="teach.html" class="btn btn-primary">Join the Team →</a>
         </div>
       </div>
     </section>
-    <!-- Values -->
-    <section class="section" style="background:var(--bg-1);">
-      <div class="container">
-        <div class="section-header aos">
-          <span class="section-tag">Values</span>
-          <h2>What we <span class="gradient-text">stand for</span></h2>
-        </div>
-        <div class="values-grid">
-          <div class="card aos">
-            <div class="feature-icon" style="font-size:1.75rem;">🔓</div>
-            <h3>Open Access</h3>
-            <p style="color:var(--text-2);font-size:.875rem;margin-top:.5rem;">Every resource, recording, and lesson is free. No paywalls, no gatekeeping.</p>
-          </div>
-          <div class="card aos">
-            <div class="feature-icon" style="font-size:1.75rem;">⚡</div>
-            <h3>Hands-On Learning</h3>
-            <p style="color:var(--text-2);font-size:.875rem;margin-top:.5rem;">We build things. Real projects, real code, real impact.</p>
-          </div>
-          <div class="card aos">
-            <div class="feature-icon" style="font-size:1.75rem;">🌱</div>
-            <h3>Student-Led</h3>
-            <p style="color:var(--text-2);font-size:.875rem;margin-top:.5rem;">Taught by students, for students. Peer learning drives deeper understanding.</p>
-          </div>
-          <!-- <div class="card aos">
-            <div class="feature-icon" style="font-size:1.75rem;">📐</div>
-            <h3>Rigor &amp; Depth</h3>
-            <p style="color:var(--text-2);font-size:.875rem;margin-top:.5rem;">We don't dumb things down. We explain them clearly.</p>
-          </div> -->
-        </div>
-      </div>
-    </section>
+
     <!-- FAQ -->
     <section class="section" style="background:var(--bg-1);">
       <div class="container" style="max-width:760px;">
@@ -195,11 +207,11 @@
         <div class="aos">
           <div class="faq-item">
             <button class="faq-q">Is CodeReach really free? <span class="arrow">▼</span></button>
-            <div class="faq-a">Yes — 100% free. All workshops, Zoom sessions, recorded content, and project resources are completely free and will remain so.</div>
+            <div class="faq-a">Yes — 100% free. All workshops, sessions, recorded content, and project resources are completely free and will remain so.</div>
           </div>
           <div class="faq-item">
             <button class="faq-q">Do I need prior experience? <span class="arrow">▼</span></button>
-            <div class="faq-a">No prior experience is required. We have beginner-friendly workshops and learning paths designed for complete newcomers to CS and AI.</div>
+            <div class="faq-a">No prior experience is required. We design everything for complete beginners to CS and AI.</div>
           </div>
           <div class="faq-item">
             <button class="faq-q">Who can volunteer to teach? <span class="arrow">▼</span></button>
@@ -207,11 +219,11 @@
           </div>
           <div class="faq-item">
             <button class="faq-q">How often are sessions held? <span class="arrow">▼</span></button>
-            <div class="faq-a">We typically run 2–4 workshops per month. Check the Sessions page for upcoming dates or sign up to get notified.</div>
+            <div class="faq-a">The summer camp meets weekly. We also run additional workshops throughout the year — sign up to get notified.</div>
           </div>
           <div class="faq-item">
             <button class="faq-q">Can I contribute a lesson or curriculum? <span class="arrow">▼</span></button>
-            <div class="faq-a">Absolutely. Head to the Teach page and fill out the volunteer form. You can propose a lesson topic or take on a recurring session.</div>
+            <div class="faq-a">Absolutely. Head to the Teach page and fill out the volunteer form. You can propose a topic or take on a recurring session.</div>
           </div>
         </div>
       </div>
@@ -225,7 +237,33 @@
     }, { threshold: 0 });
     document.querySelectorAll('.aos').forEach(el => observer.observe(el));
 
-    // FAQ accordion
+    // Peek carousel
+    (function () {
+      const viewport = document.querySelector('.photo-strip-viewport');
+      if (!viewport) return;
+      const track = document.getElementById('strip-track');
+      const slides = track.querySelectorAll('.photo-strip-slide');
+      const prevBtn = document.getElementById('strip-prev');
+      const nextBtn = document.getElementById('strip-next');
+      let cur = 0;
+
+      function offset(i) {
+        const vw = viewport.offsetWidth;
+        const sw = slides[0].offsetWidth;
+        return (vw - sw) / 2 - i * (sw + 14);
+      }
+
+      function goTo(n) {
+        cur = (n + slides.length) % slides.length;
+        track.style.transform = `translateX(${offset(cur)}px)`;
+      }
+
+      prevBtn.addEventListener('click', () => goTo(cur - 1));
+      nextBtn.addEventListener('click', () => goTo(cur + 1));
+      window.addEventListener('resize', () => goTo(cur));
+      goTo(1);
+    })();
+
     document.querySelectorAll('.faq-q').forEach(btn => {
       btn.addEventListener('click', () => {
         const item = btn.closest('.faq-item');
@@ -233,7 +271,7 @@
         document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
         if (!isOpen) item.classList.add('open');
       });
-    });z
+    });
   </script>
 </body>
 </html>
